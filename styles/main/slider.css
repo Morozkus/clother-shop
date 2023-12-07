@@ -1,0 +1,68 @@
+.slider-main .slider__container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.slider-main .slider__container img {
+    height: 0;
+    width: 100%;
+    z-index: -2;
+}
+
+.slider-main button {
+    position: absolute;
+    top: 50%;
+
+    height: 50px;
+    width: 30px;
+    border: none;
+    outline: none;
+
+    cursor: pointer;
+    
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+
+    @media all and (max-width: 600px) {
+        display: none !important;
+    }
+}
+
+.slider-main:hover button {
+    display: flex;
+}
+
+.slider-main button:hover {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.slider-main button .arrow {
+    border: solid #fff;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 10px;
+    transition: transform 0.3s ease-out;
+    outline: none;
+}
+
+.slider-main #right-btn {
+    margin: auto 0 auto -2em;
+    right: 0;
+}
+
+.slider-main #right-btn .arrow {
+    transform: rotate(-45deg);
+}
+
+.slider-main #left-btn {
+    z-index: 0;
+    margin: auto -2em auto 0;
+    left: 0;
+}
+
+.slider-main #left-btn .arrow {
+    transform: rotate(135deg);
+}
