@@ -2,48 +2,53 @@
 @import url('./styles/footer.css');
 
 @font-face {
- font-family: 'Montserrat';
- src: url('./assets/fonts/Montserrat-VariableFont_wght.ttf');
+    font-family: 'Montserrat';
+    src: url('./assets/fonts/Montserrat-VariableFont_wght.ttf');
 }
 
 @font-face {
- font-family: 'Montserrat-Italic';
- src: url('./assets/fonts/Montserrat-Italic-VariableFont_wght.ttf');
+    font-family: 'Montserrat-Italic';
+    src: url('./assets/fonts/Montserrat-Italic-VariableFont_wght.ttf');
 }
 
 @font-face {
- font-family: 'Inter';
- src: url('./assets/fonts/Inter-VariableFont_slnt\,wght.ttf');
+    font-family: 'Inter';
+    src: url('./assets/fonts/Inter-VariableFont_slnt\,wght.ttf');
 }
 
 :root {
- font-size: 10px;
+    font-size: 10px;
 
- --prymary-font-size: 1.4rem;
- --small-text-font-size: 1.3rem;
- --text-font-size: 1.6rem;
- --big-text-font-size: 1.8rem;
- --title-font-size: 2.6rem;
+    --prymary-font-size: 1.4rem;
+    --small-text-font-size: 1.3rem;
+    --text-font-size: 1.6rem;
+    --big-text-font-size: 1.8rem;
+    --title-font-size: 2.6rem;
 
- --normal-weight: 400;
- --medium-weight: 500;
- --bold-weight: 900;
+    --normal-weight: 400;
+    --medium-weight: 500;
+    --bold-weight: 900;
 }
 
 * {
- box-sizing: border-box;
- padding: 0;
- margin: 0;
- list-style: none;
- text-decoration: none;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
 }
 
 body {
- background-color: #F5F5F5;
- font-family: 'Montserrat', sans-serif;
- font-weight: 400;
- font-size: var(--prymary-font-size);
- line-height: auto;
+    background-color: #F5F5F5;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: var(--prymary-font-size);
+    color: #181818;
+}
+
+ul,
+ol {
+    padding: 0;
 }
 
 h1,
@@ -52,38 +57,51 @@ h3,
 h4,
 h5,
 h6 {
- font-weight: var(--medium-weight);
+    font-weight: var(--medium-weight);
+    margin-bottom: 0;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #181818;
+    font-family: 'Inter';
 }
 
 button {
- outline: none;
- border: none;
- background-color: transparent;
+    font-family: 'Inter';
+    outline: none;
+    border: none;
+    background-color: transparent;
 }
 
 .container {
- width: clamp(320px, 100%, 1240px);
- margin: 0 auto;
- padding: 0 10px;
+    width: clamp(320px, 100%, 1240px);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 10px;
 }
 
 @media all and (max-width: 767px) {
- .container {
-  padding: 0 20px;
- }
+    .container {
+        padding: 0 20px;
+    }
 
- :root {
-  --text-font-size: 1.4rem;
-  --big-text-font-size: 1.6rem;
-  --title-font-size: 2rem;
- }
+    :root {
+        --text-font-size: 1.3rem;
+        --big-text-font-size: 1.5rem;
+        --title-font-size: 2rem;
+    }
 }
 
 @media all and (max-width: 500px) {
- :root {
-  --small-text-font-size: 0.9rem;
-  --text-font-size: 1.2rem;
-  --big-text-font-size: 1.6rem;
-  --title-font-size: 2rem;
- }
+    :root {
+        --small-text-font-size: 0.9rem;
+        --text-font-size: 1rem;
+        --big-text-font-size: 1.2rem;
+        --title-font-size: 1.9rem;
+    }
 }

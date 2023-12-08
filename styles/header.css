@@ -63,7 +63,6 @@
 
 .burger {
  width: 50px;
- height: 20px;
 
  cursor: pointer;
 }
@@ -86,12 +85,10 @@
 
  .burger {
   width: 24px;
-  height: 10px;
  }
 
  .nav__link {
   width: 20px;
-  height: 20px;
  }
 
  .nav__link img {
@@ -124,12 +121,10 @@
 
  .burger {
   width: 24px;
-  height: 10px;
  }
 
  .nav__link {
   width: 15px;
-  height: 15px;
  }
 
  .nav__link img {

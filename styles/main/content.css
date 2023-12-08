@@ -1,0 +1,46 @@
+@import url('../../global.css');
+
+.content__container {
+    margin-top: 120px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.content__title {
+    align-self: center;
+    font-size: var(--title-font-size);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.content__text {
+    font-size: var(--big-text-font-size);
+}
+
+.content__link {
+    margin-top: 15px;
+    font-size: var(--big-text-font-size);
+    text-decoration: underline;
+    color: #181818;
+    align-self: flex-end;
+}
+
+@media screen and (max-width: 500px) {
+    .content__container {
+        margin-top: 60px;
+    }
+
+    .content__text_second {
+        display: none;
+    }
+
+    .content__title {
+        font-size: 13px;
+        margin-bottom: 5px;
+    }
+
+    .content__link {
+        margin-top: 20px;
+    }
+}
