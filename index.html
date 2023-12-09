@@ -2,74 +2,365 @@
 <html lang="en">
 
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link rel="stylesheet" href="global.css">
- <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="global.css">
+  <link rel="stylesheet" href="./styles/main/styles.css">
+  <title>Document</title>
 </head>
 
 <body>
- <header class="header">
-  <section class="header__header-top">
-   <p class="header__header-top-text">Скидки к 1 сентября | На избранные товары | Узнать условия </p>
-  </section>
+  <header class="header">
+    <section class="header__header-top">
+      <p class="header__header-top-text">Скидки к 1 сентября | На избранные товары | Узнать условия </p>
+    </section>
 
-  <section class="header__main">
-   <div class="container header-main__container">
-    <button class="burger"><img src="./assets/images/header/burger.svg" alt="burger"></button>
+    <section class="header__main">
+      <div class="container header-main__container">
+        <button class="burger"><img src="./assets/images/header/burger.svg" alt="burger"></button>
 
-    <a href="#" class="logo-link"><img class="logo" src="./assets/images/header/logo_chikita 1.png" alt="logo"></a>
+        <a href="#" class="logo-link"><img class="logo" src="./assets/images/header/logo_chikita 1.png" alt="logo"></a>
 
-    <nav class="nav">
-     <a href="#" class="nav__link img_shop"><img src="./assets/images/header/clarity_shopping-bag-line.svg" alt="shop"
-       class="nav__img"></a>
-     <a href="#" class="nav__link"><img src="./assets/images/header/ph_heart.svg" alt="heart" class="nav__img"></a>
-     <a href="#" class="nav__link"><img src="./assets/images/header/octicon_person-24.svg" alt="person"
-       class="nav__img"></a>
-     <a href="#" class="nav__link"><img src="./assets/images/header/ph_phone-light.svg" alt="phone" class="nav__img"></a>
-    </nav>
-   </div>
-  </section>
- </header>
+        <nav class="nav">
+          <a href="#" class="nav__link img_shop"><img src="./assets/images/header/clarity_shopping-bag-line.svg"
+              alt="shop" class="nav__img"></a>
+          <a href="#" class="nav__link"><img src="./assets/images/header/ph_heart.svg" alt="heart" class="nav__img"></a>
+          <a href="#" class="nav__link"><img src="./assets/images/header/octicon_person-24.svg" alt="person"
+              class="nav__img"></a>
+          <a href="#" class="nav__link"><img src="./assets/images/header/ph_phone-light.svg" alt="phone"
+              class="nav__img"></a>
+        </nav>
+      </div>
+    </section>
+  </header>
 
- <main class="main">
+  <main class="main">
 
- </main>
+    <div class="container main__container slider-main">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+            aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./assets/images/main/slider_img.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/images/main/slider_img.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/images/main/slider_img.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/images/main/slider_img.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Предыдущий</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Следующий</span>
+        </button>
+      </div>
+    </div>
 
- <footer class="footer">
-  <div class="container footer__container">
-   <img src="./assets/images/footer/logo 2 1.png" alt="logo" class="footer__logo">
+    <section class="quick">
+      <div class="container quick__container">
+        <div class="quick__settings">
+          <h2 class="quick__title">БЫСТРЫЙ ПРОСМОТР</h2>
 
-   <ul class="footer__list footer__list-buyer">
-    <h3 class="footer__list-title">ПОКУПАТЕЛЯМ</h3>
-    <li class="footer__list-item"><a href="#" class="footer__list-link">Доставка</a></li>
-    <li class="footer__list-item"><a href="#" class="footer__list-link">Оплата</a></li>
-    <li class="footer__list-item"><a href="#" class="footer__list-link">Возврат</a></li>
-    <li class="footer__list-item"><a href="#" class="footer__list-link">Таблицы размеров</a></li>
-    <li class="footer__list-item"><a href="#" class="footer__list-link">Политика конфиденциальности</a></li>
-   </ul>
+          <button class="quick__btn">В КАТАЛОГ</button>
 
-   <ul class="footer__list">
-    <h3 class="footer__list-title">О КОМПАНИИ</h3>
-    <li class="footer__list-item"><a href="#" class="footer__list-link">О нас</a></li>
-    <li class="footer__list-item"><a href="#" class="footer__list-link">Контакты</a></li>
-    <li class="footer__list-item"><a href="#" class="footer__list-link">Оптовые продажи</a></li>
-   </ul>
+          <ul class="quick__menu">
+            <li class="quick__menu-item quick__menu-item_active">Хиты</li>
+            <li class="quick__menu-item">Акции</li>
+          </ul>
 
-   <div class="footer__list footer__list-soc">
-    <h3 class="footer__list-title">НАШИ СОЦСЕТИ</h3>
-    <ul class="footer__soc-list">
-     <li class="footer__soc-item"><img src="./assets/images/footer/uil_vk.svg" alt="соц сеть вконтакте"
-       class="footer__soc-img"></li>
-     <li class="footer__soc-item"><img src="./assets/images/footer/basil_viber-solid.svg" alt="соц сеть вайбер"
-       class="footer__soc-img"></li>
-     <li class="footer__soc-item"><img src="./assets/images/footer/ic_baseline-telegram.svg" alt="соц сеть телеграмм"
-       class="footer__soc-img"></li>
-    </ul>
-   </div>
+          <div id="carouselExampleControls" class="carousel slide quick__slider" data-bs-ride="carousel"
+            data-bs-interval=false>
+            <div class="carousel-inner">
 
-  </div>
- </footer>
+              <div class="carousel-item active">
+                <div class="quick__slider-page">
+                  <div class="quick__slider-page-card">
+                    <img src="./assets/images/main/slider_girl.png" class="d-block w-100" alt="...">
+                    <p class="quick__slidaer-page-text">Широкие брюки с боковыми карманами</p>
+                    <p class="quick__slidaer-page-price">3 780 ₽</p>
+                  </div>
+
+                  <div class="quick__slider-page-card">
+                    <img src="./assets/images/main/slider_girl.png" class="d-block w-100" alt="...">
+                    <p class="quick__slidaer-page-text">Широкие брюки с боковыми карманами</p>
+                    <p class="quick__slidaer-page-price">3 780 ₽</p>
+                  </div>
+
+                  <div class="quick__slider-page-card">
+                    <img src="./assets/images/main/slider_boy.png" class="d-block w-100" alt="...">
+                    <p class="quick__slidaer-page-text">Брюки для мальчика с боковыми карманами</p>
+                    <p class="quick__slidaer-page-price">3 800 ₽</p>
+                  </div>
+
+                  <div class="quick__slider-page-card">
+                    <img src="./assets/images/main/slider_boy.png" class="d-block w-100" alt="...">
+                    <p class="quick__slidaer-page-text">Брюки для мальчика с боковыми карманами</p>
+                    <p class="quick__slidaer-page-price">3 800 ₽</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="quick__slider-page">
+                  <div class="quick__slider-page-card">
+                    <img src="./assets/images/main/slider_girl.png" class="d-block w-100" alt="...">
+                    <p class="quick__slidaer-page-text">Широкие брюки с боковыми карманами</p>
+                    <p class="quick__slidaer-page-price">3 780 ₽</p>
+                  </div>
+
+                  <div class="quick__slider-page-card">
+                    <img src="./assets/images/main/slider_girl.png" class="d-block w-100" alt="...">
+                    <p class="quick__slidaer-page-text">Широкие брюки с боковыми карманами</p>
+                    <p class="quick__slidaer-page-price">3 780 ₽</p>
+                  </div>
+
+                  <div class="quick__slider-page-card">
+                    <img src="./assets/images/main/slider_boy.png" class="d-block w-100" alt="...">
+                    <p class="quick__slidaer-page-text">Брюки для мальчика с боковыми карманами</p>
+                    <p class="quick__slidaer-page-price">3 800 ₽</p>
+                  </div>
+
+                  <div class="quick__slider-page-card">
+                    <img src="./assets/images/main/slider_boy.png" class="d-block w-100" alt="...">
+                    <p class="quick__slidaer-page-text">Брюки для мальчика с боковыми карманами</p>
+                    <p class="quick__slidaer-page-price">3 800 ₽</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="quick__slider-page">
+                  <div class="quick__slider-page-card">
+                    <img src="./assets/images/main/slider_girl.png" class="d-block w-100" alt="...">
+                    <p class="quick__slidaer-page-text">Широкие брюки с боковыми карманами</p>
+                    <p class="quick__slidaer-page-price">3 780 ₽</p>
+                  </div>
+
+                  <div class="quick__slider-page-card">
+                    <img src="./assets/images/main/slider_girl.png" class="d-block w-100" alt="...">
+                    <p class="quick__slidaer-page-text">Широкие брюки с боковыми карманами</p>
+                    <p class="quick__slidaer-page-price">3 780 ₽</p>
+                  </div>
+
+                  <div class="quick__slider-page-card">
+                    <img src="./assets/images/main/slider_boy.png" class="d-block w-100" alt="...">
+                    <p class="quick__slidaer-page-text">Брюки для мальчика с боковыми карманами</p>
+                    <p class="quick__slidaer-page-price">3 800 ₽</p>
+                  </div>
+
+                  <div class="quick__slider-page-card">
+                    <img src="./assets/images/main/slider_boy.png" class="d-block w-100" alt="...">
+                    <p class="quick__slidaer-page-text">Брюки для мальчика с боковыми карманами</p>
+                    <p class="quick__slidaer-page-price">3 800 ₽</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="quick__slider-page">
+                  <div class="quick__slider-page-card">
+                    <img src="./assets/images/main/slider_girl.png" class="d-block w-100" alt="...">
+                    <p class="quick__slidaer-page-text">Широкие брюки с боковыми карманами</p>
+                    <p class="quick__slidaer-page-price">3 780 ₽</p>
+                  </div>
+
+                  <div class="quick__slider-page-card">
+                    <img src="./assets/images/main/slider_girl.png" class="d-block w-100" alt="...">
+                    <p class="quick__slidaer-page-text">Широкие брюки с боковыми карманами</p>
+                    <p class="quick__slidaer-page-price">3 780 ₽</p>
+                  </div>
+
+                  <div class="quick__slider-page-card">
+                    <img src="./assets/images/main/slider_boy.png" class="d-block w-100" alt="...">
+                    <p class="quick__slidaer-page-text">Брюки для мальчика с боковыми карманами</p>
+                    <p class="quick__slidaer-page-price">3 800 ₽</p>
+                  </div>
+
+                  <div class="quick__slider-page-card">
+                    <img src="./assets/images/main/slider_boy.png" class="d-block w-100" alt="...">
+                    <p class="quick__slidaer-page-text">Брюки для мальчика с боковыми карманами</p>
+                    <p class="quick__slidaer-page-price">3 800 ₽</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev text-dark" type="button" data-bs-target="#carouselExampleControls"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Предыдущий</span>
+            </button>
+            <button class="carousel-control-next text-dark" type="button" data-bs-target="#carouselExampleControls"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Следующий</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content">
+      <div class="container content__container">
+        <h2 class="content__title">сhiquita chernika - российский бренд школьной формы</h2>
+        <p class="content__text">Привет, это сhiquita chernika. Мы - российский бренд школьной формы из Калининграда!
+          Несколько лет назад мы были созданы для того, чтобы изменить ваше представление о посадке школьной формы и ее
+          стиле. Девочек сhiquita chernika не перепутать ни с кем!</p>
+        <p class="content__text content__text_second">Специально выверенные до миллиметра лекала позволяют посадить
+          модели даже на самых
+          тоненьких школьниц. Теперь не нужно ломать голову, где найти редкие маленькие размеры! Идеально сидящая по
+          фигуре школьная форма – это сhiquita chernika.
+        </p>
+
+        <a href="#" class="content__link">ПОДРОБНЕЕ</a>
+      </div>
+    </section>
+
+    <section class="popularity">
+      <div class="container popylarity__container">
+        <div class="popylarity__card">
+          <img src="./assets/images/main/popularity_f.png" alt="" class="popylarity__card-img">
+          <div class="popylarity__card-content">
+            <div class="popylarity__card-container">
+              <h3 class="popylarity__card-content-title">готовые образы</h3>
+              <p class="popylarity__card-content-text">Добавьте любой понравившийся образ сразу в корзину</p>
+              <div class="popylarity__card-content-galery">
+                <img src="./assets/images/main/popylarity_bou.png" alt="">
+                <img src="./assets/images/main/popylarity_bou.png" alt="">
+                <img src="./assets/images/main/popylarity_bou.png" alt="">
+              </div>
+              <a href="#" class="popylarity__card-content-link">ПЕРЕЙТИ</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="popylarity__card">
+          <img src="./assets/images/main/popularity_s.png" alt="" class="popylarity__card-img img-fluid">
+          <div class="popylarity__card-content">
+            <div class="popylarity__card-container">
+              <h3 class="popylarity__card-content-title">ПОПУЛЯРНОЕ</h3>
+              <p class="popylarity__card-content-text">Товары, которые наши клиенты выбирают чаще всего</p>
+              <div class="popylarity__card-content-galery">
+                <img src="./assets/images/main/popylarity_bou.png" alt="">
+                <img src="./assets/images/main/popylarity_bou.png" alt="">
+                <img src="./assets/images/main/popylarity_bou.png" alt="">
+              </div>
+              <a href="#" class="popylarity__card-content-link">ПЕРЕЙТИ</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="subscribe">
+      <div class="container subscribe__container">
+        <h2 class="subscribe__title">будьте ближе к бренду</h2>
+        <p class="subscribe__text">Узнайте первыми о закрытых распродажах, новинках и скидках!</p>
+        <div class="subscribe__input-container">
+          <input type="email" class="subscribe__input" placeholder="Введите ваш Email">
+          <button class="subscribe__button">Подписаться</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- last slider -->
+
+    <!-- last slider -->
+
+    <section class="adv">
+      <div class="container adv__container">
+        <div class="adv__card">
+          <div class="adv__card-wrapper">
+            <img src="./assets/images/main/park.svg" alt="" class="adv__img">
+            <div class="adv__card-container">
+              <h4 class="adv__title">Как сделать заказ?</h4>
+              <a href="#" class="adv__text">Подробная инструкция для новых клиентов</a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="adv__card">
+          <div class="adv__card-wrapper">
+            <img src="./assets/images/main/diamond.svg" alt="" class="adv__img">
+            <div class="adv__card-container">
+              <h4 class="adv__title">стандарты качества</h4>
+              <a href="#" class="adv__text">Изменяем представление о школьной форме</a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="adv__card">
+          <div class="adv__card-wrapper">
+            <img src="./assets/images/main/deliviry.svg" alt="" class="adv__img">
+            <div class="adv__card-container">
+              <h4 class="adv__title">быстрая доставка</h4>
+              <a href="#" class="adv__text">Все о доставке, возвратах и пошлине. </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__container">
+      <img src="./assets/images/footer/logo 2 1.png" alt="logo" class="footer__logo">
+
+      <ul class="footer__list footer__list-buyer">
+        <h3 class="footer__list-title">ПОКУПАТЕЛЯМ</h3>
+        <li class="footer__list-item"><a href="#" class="footer__list-link">Доставка</a></li>
+        <li class="footer__list-item"><a href="#" class="footer__list-link">Оплата</a></li>
+        <li class="footer__list-item"><a href="#" class="footer__list-link">Возврат</a></li>
+        <li class="footer__list-item"><a href="#" class="footer__list-link">Таблицы размеров</a></li>
+        <li class="footer__list-item"><a href="#" class="footer__list-link">Политика конфиденциальности</a></li>
+      </ul>
+
+      <ul class="footer__list">
+        <h3 class="footer__list-title">О КОМПАНИИ</h3>
+        <li class="footer__list-item"><a href="#" class="footer__list-link">О нас</a></li>
+        <li class="footer__list-item"><a href="#" class="footer__list-link">Контакты</a></li>
+        <li class="footer__list-item"><a href="#" class="footer__list-link">Оптовые продажи</a></li>
+      </ul>
+
+      <div class="footer__list footer__list-soc">
+        <h3 class="footer__list-title">НАШИ СОЦСЕТИ</h3>
+        <ul class="footer__soc-list">
+          <li class="footer__soc-item"><img src="./assets/images/footer/uil_vk.svg" alt="соц сеть вконтакте"
+              class="footer__soc-img"></li>
+          <li class="footer__soc-item"><img src="./assets/images/footer/basil_viber-solid.svg" alt="соц сеть вайбер"
+              class="footer__soc-img"></li>
+          <li class="footer__soc-item"><img src="./assets/images/footer/ic_baseline-telegram.svg"
+              alt="соц сеть телеграмм" class="footer__soc-img"></li>
+        </ul>
+      </div>
+
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

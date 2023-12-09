@@ -56,7 +56,7 @@
   grid-template-rows: repeat(2, auto);
 
   justify-content: space-between;
-  gap: 20px 0;
+  gap: 20px 40px;
  }
 
  .footer__list {
