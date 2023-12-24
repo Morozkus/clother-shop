@@ -52,7 +52,7 @@
     outline: none;
 }
 
-.carousel-indicators button {
+.slider-main .carousel-indicators button {
     height: 10px !important;
     width: 10px !important;
     margin: 0 10px !important;

@@ -1,0 +1,26 @@
+@import url('../../global.css');
+@import url('./bucket-list.css');
+@import url('./inputs.css');
+
+.title {
+  font-size: var(--title-font-size);
+}
+
+.step__container {
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+}
+
+.step__title {
+  font-size: 20px;
+}
+
+.step__text {
+  font-size: var(--big-text-font-size);
+}
+
+.step__text::after {
+  content: '▼';
+}

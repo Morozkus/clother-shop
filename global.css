@@ -71,6 +71,10 @@ a {
     font-family: 'Inter';
 }
 
+a:hover {
+    color: inherit
+}
+
 button {
     font-family: 'Inter';
     outline: none;

@@ -1,0 +1,64 @@
+@import url('../../global.css');
+
+.catalogPage__container {
+  display: grid;
+  grid-template-columns: auto 500px;
+  grid-template-rows: auto auto;
+  gap: 35px 0;
+}
+
+.galery {
+  display: flex;
+  gap: 20px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: var(--title-font-size);
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.price {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.info__wrapper {
+  margin-top: 30px;
+}
+
+.info-wrapper__title {
+  font-size: var(--large-text-font-size);
+  font-weight: 500;
+}
+
+.info-wrapper__text {
+  font-size: var(--large-text-font-size);
+}
+
+.page__settings {
+  justify-self: flex-end;
+}
+
+.btn__container {
+  display: flex;
+  gap: 35px;
+}
+
+.add-bucket-btn {
+  background-color: #004F84;
+  color: #ffffff;
+  font-weight: 500;
+  flex-grow: 1;
+  padding: 20px 0;
+}
+
+.like {
+  width: 62px;
+  border: 1px solid #5E6981;
+}

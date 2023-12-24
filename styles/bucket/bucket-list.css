@@ -1,0 +1,66 @@
+.bucket__container {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.bucket__card {
+  display: flex;
+  gap: 25px;
+
+  height: 350px;
+  padding-top: 30px;
+  border-top: 1px solid #71839B;
+}
+
+.bucket__card-small-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.bucket__card-large-container {
+  max-width: 240px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.bucket__card-large-container-margin {
+  margin-left: auto;
+}
+
+.bucket__card-count-container {
+  justify-content: flex-end;
+  display: flex;
+  margin-top: 20px;
+  gap: 21px;
+}
+
+.bucket__card-count-text {
+  font-size: var(--big-text-font-size);
+}
+
+.bucket__card-title {
+  font-size: var(--big-text-font-size);
+}
+
+.bucket__card-text {
+  font-size: var(--big-text-font-size);
+  opacity: 0.5;
+}
+
+.bucket__card-price {
+  font-size: var(--title-font-size);
+
+}
+
+.bucket__card-del {
+  cursor: pointer;
+  font-size: var(--big-text-font-size);
+  font-weight: 700;
+
+  text-decoration: underline;
+}

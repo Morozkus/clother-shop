@@ -1,0 +1,147 @@
+@import url('../../global.css');
+
+.catalog__container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+
+  margin-top: 15px;
+}
+
+.clother__list {
+  display: flex;
+  gap: 50px;
+}
+
+.clother__list-link {
+  color: #181818;
+  font-size: var(--text-font-size);
+  opacity: 0.5;
+}
+
+.clother__list-link_active {
+  opacity: 1;
+}
+
+.clother__settings {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdown-menu {
+  font-size: var(--text-font-size);
+}
+
+.dropdown-item_padding {
+  padding: 1rem 2.5rem;
+}
+
+#drop2.show {
+  display: flex;
+}
+
+.drop2__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.drop2__color {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.drop2__color_active {
+  border: 1px solid #000000;
+}
+
+.drop2__text {
+  font-size: var(--small-text-font-size);
+}
+
+.drop2__color_black {
+  background-color: #181818;
+}
+
+.drop2__color_gray {
+  background-color: #838383;
+}
+
+.drop2__color_red {
+  background-color: #960B0B;
+}
+
+.drop2__color_blue {
+  background-color: #355DB5;
+}
+
+#drop3.show {
+  display: grid;
+  grid-template-rows: repeat(7, 1fr);
+  grid-template-columns: 1fr 1fr;
+}
+
+.drop3-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type="checkbox"]:checked,
+input[type="checkbox"]:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+
+input[type="checkbox"]:checked+label,
+input[type="checkbox"]:not(:checked)+label {
+  position: relative;
+  padding-left: 28px;
+  cursor: pointer;
+  line-height: 20px;
+  display: inline-block;
+  color: #666;
+}
+
+input[type="checkbox"]:checked+label:before,
+input[type="checkbox"]:not(:checked)+label:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #000;
+  background: #fff;
+}
+
+input[type="checkbox"]:checked+label:after,
+input[type="checkbox"]:not(:checked)+label:after {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background: #181818;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+input[type="checkbox"]:not(:checked)+label:after {
+  opacity: 0;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
+input[type="checkbox"]:checked+label:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
